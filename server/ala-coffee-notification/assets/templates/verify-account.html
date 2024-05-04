@@ -1,0 +1,85 @@
+<!-- verify-account.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Verification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #ffffff;
+      }
+      .email-header,
+      .email-footer {
+        text-align: center;
+        background-color: #c67c4e;
+        color: white;
+        padding: 10px;
+      }
+      .email-content {
+        padding: 20px;
+      }
+      .verify-button {
+        background-color: #c67c4e;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+        margin: 40px auto;
+        width: 250px;
+        text-align: center;
+      }
+
+      .text-heading {
+        font-size: 30px;
+      }
+      .email-footer p {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td>
+          <div class="email-container">
+            <div class="email-header">
+              <h1>A Little Anam</h1>
+            </div>
+
+            <div class="email-content">
+              <h2 class="text-heading">Account Verification</h2>
+              <p>Hi {{.Name}},</p>
+              <p>
+                You're almost set to start enjoying. Simply click the link below
+                to verify your email address and get started. The link expires
+                in 24 hours.
+              </p>
+              <a href="{{.Link}}" class="verify-button">Verify Account</a>
+            </div>
+
+            <div class="email-footer">
+              <p>
+                If you did not create an account using this email address,
+                please ignore this email.
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

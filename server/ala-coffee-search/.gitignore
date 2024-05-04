@@ -1,0 +1,8 @@
+# IDE
+.vscode/
+/__debug_bin
+
+# System
+bin/
+tmp/
+data/
